@@ -8,14 +8,19 @@ html(lang="en")
     link(href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
     block title
   body
-    nav
-      a(href="/")
+    .grid
+      nav#main-nav
         .logo
-          include ../../../dist/img/Bryce_logo.svg
-      a(href="/work.html") Work
-      a(href="/about.html") About
-      a(href="/contact.html") Contact
-    block content
-    footer
-      script(src="/dist/js/main-dist.js")
-      span &copy; 2018 Bryce Stradling
+          a(href="/")
+            include ../../../dist/img/logo_jet.svg
+        ul    
+          li 
+            a(href="/work.html") Work
+          li
+            a(href="/about.html") About
+          li  
+            a(href="/contact.html") Contact
+      block content
+      footer
+        script(src="/dist/js/main-dist.js")
+        // span &copy; 2018 Bryce Stradling

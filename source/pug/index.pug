@@ -2,9 +2,13 @@ extend _partials/layout.pug
 block title
   title Bryce Stradling - Designer
 block content
-  main
-    h1 Bryce Stradling
-    h2 Designer
-  nav
-    a.btn(href="#") Resume
-    a.btn(href="#") Portfolio
+  main.content
+    .hero
+      .big-logo
+        include ../../dist/img/logo_jet.svg
+      .big-text
+        h1 Bryce Stradling
+        h2 Designer
+    nav.ctas
+      a.btn(href="#") Resume
+      a.btn(href="#") Portfolio
