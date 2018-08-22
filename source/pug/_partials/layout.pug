@@ -13,13 +13,25 @@ html(lang="en")
         .logo
           a(href="/")
             include ../../../dist/img/logo_jet.svg
-        ul    
+        .links
+          a(href="/work.html") Work
+          a(href="/about.html") About
+          a(href="/contact.html") Contact
+        // ul    
           li 
             a(href="/work.html") Work
           li
             a(href="/about.html") About
           li  
             a(href="/contact.html") Contact
+        .flair
+          .switcher
+            img(src="../../../dist/img/swap-arrows.svg" id="switcher" onclick="swapColor()")
+          .pallete.bg
+            input(id="pallete1" type="color" name="" value="#00ffc2")
+          .pallete.fg
+            input(id="pallete2" type="color" name="" value="#ff003d")
+        .line  
       block content
       footer
         script(src="/dist/js/main-dist.js")
