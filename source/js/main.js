@@ -1,1 +1,1 @@
-console.log("Dope Shoes")
+"use strict"
