@@ -2,5 +2,8 @@ extend _partials/layout.pug
 block title
   title Work
 block content
-  main
-    h1 gallery
+  main#Gallery
+    #Work-grid
+      - for (var x = 1; x < 20; x++)
+        .work-item
+          span= [x]
