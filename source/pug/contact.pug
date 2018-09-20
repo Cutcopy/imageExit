@@ -2,16 +2,17 @@ extend _partials/layout.pug
 block title
   title Contact
 block content
-  main#Contact-content
-    .title
-      h1 Contact
-    form#contactForm
-      h2.c-header DEAR BRYCE
-      fieldset
-        label My Name is
-        input(type="text" placeholder="Name")
-      fieldset
-        label you can reach me at
-        input(type="email" placeholder="Email")
-      textarea(placeholder="myWord(I do Declare);")
-      input(type="submit" value="send")
+  main#Contact
+    #Contact-content
+      .title
+        h1 Contact
+      form#contactForm
+        h2.c-header DEAR BRYCE
+        fieldset
+          label My Name is
+          input(type="text" placeholder="(Name)")
+        fieldset
+          label you can reach me at
+          input(type="email" placeholder="(Email)")
+        textarea(name="message", cols="30", rows="10" placeholder="myWord(I do Declare);")
+        input(type="submit" value="send")
